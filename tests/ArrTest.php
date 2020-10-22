@@ -1,8 +1,8 @@
 <?php
 
-namespace ShiftOneLabs\LaravelSqsFifoQueue\Tests;
+namespace CodigoseCafe\HorizonSqsFifoQueue\Tests;
 
-use ShiftOneLabs\LaravelSqsFifoQueue\Support\Arr;
+use CodigoseCafe\HorizonSqsFifoQueue\Support\Arr;
 
 class ArrTest extends TestCase
 {

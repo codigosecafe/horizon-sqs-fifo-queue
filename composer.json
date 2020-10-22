@@ -1,18 +1,18 @@
 {
-    "name": "codigosecafe/laravel-sqs-fifo-queue",
+    "name": "codigosecafe/horizon-sqs-fifo-queue",
     "description": "Adiciona um driver de fila Laravel para filas Amazon SQS FIFO.",
     "keywords": ["laravel", "lumen", "illuminate", "queue", "sqs", "fifo", "aws"],
-    "homepage": "https://github.com/shiftonelabs/laravel-sqs-fifo-queue",
+    "homepage": "https://github.com/codigosecafe/horizon-sqs-fifo-queue",
     "license": "MIT",
     "authors": [
         {
-            "name": "Patrick Carlo-Hickman",
-            "email": "patrick@shiftonelabs.com"
+            "name": "Claudio Alexssandro Lino",
+            "email": "codigosecafe+git@gmail.com"
         }
     ],
     "support": {
-        "issues": "https://github.com/shiftonelabs/laravel-sqs-fifo-queue/issues",
-        "source": "https://github.com/shiftonelabs/laravel-sqs-fifo-queue"
+        "issues": "https://github.com/codigosecafe/horizon-sqs-fifo-queue/issues",
+        "source": "https://github.com/codigosecafe/horizon-sqs-fifo-queue"
     },
     "require": {
         "php": ">=5.5.0",
@@ -31,12 +31,12 @@
     },
     "autoload": {
         "psr-4": {
-            "ShiftOneLabs\\LaravelSqsFifoQueue\\": "src/"
+            "CodigoseCafe\\HorizonSqsFifoQueue\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "ShiftOneLabs\\LaravelSqsFifoQueue\\Tests\\": "tests/"
+            "CodigoseCafe\\HorizonSqsFifoQueue\\Tests\\": "tests/"
         }
     },
     "config": {
@@ -46,7 +46,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "ShiftOneLabs\\LaravelSqsFifoQueue\\LaravelSqsFifoQueueServiceProvider"
+                "CodigoseCafe\\HorizonSqsFifoQueue\\HorizonSqsFifoQueueServiceProvider"
             ]
         }
     }

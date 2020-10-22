@@ -1,11 +1,11 @@
 <?php
 
-namespace ShiftOneLabs\LaravelSqsFifoQueue\Tests;
+namespace CodigoseCafe\HorizonSqsFifoQueue\Tests;
 
-use ShiftOneLabs\LaravelSqsFifoQueue\Queue\Deduplicators\Sqs;
-use ShiftOneLabs\LaravelSqsFifoQueue\Queue\Deduplicators\Unique;
-use ShiftOneLabs\LaravelSqsFifoQueue\Queue\Deduplicators\Content;
-use ShiftOneLabs\LaravelSqsFifoQueue\Queue\Deduplicators\Callback;
+use CodigoseCafe\HorizonSqsFifoQueue\Queue\Deduplicators\Sqs;
+use CodigoseCafe\HorizonSqsFifoQueue\Queue\Deduplicators\Unique;
+use CodigoseCafe\HorizonSqsFifoQueue\Queue\Deduplicators\Content;
+use CodigoseCafe\HorizonSqsFifoQueue\Queue\Deduplicators\Callback;
 
 class DeduplicatorTest extends TestCase
 {

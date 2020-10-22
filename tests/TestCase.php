@@ -1,6 +1,6 @@
 <?php
 
-namespace ShiftOneLabs\LaravelSqsFifoQueue\Tests;
+namespace CodigoseCafe\HorizonSqsFifoQueue\Tests;
 
 use Exception;
 use Dotenv\Dotenv;
@@ -11,7 +11,7 @@ use Illuminate\Queue\SqsQueue;
 use PHPUnit_Framework_TestCase;
 use Illuminate\Encryption\Encrypter;
 use Illuminate\Queue\Capsule\Manager as Capsule;
-use ShiftOneLabs\LaravelSqsFifoQueue\LaravelSqsFifoQueueServiceProvider;
+use CodigoseCafe\HorizonSqsFifoQueue\HorizonSqsFifoQueueServiceProvider;
 
 class TestCase extends PHPUnit_Framework_TestCase
 {
@@ -102,7 +102,7 @@ class TestCase extends PHPUnit_Framework_TestCase
      */
     public function registerServiceProvider()
     {
-        $provider = new LaravelSqsFifoQueueServiceProvider($this->app);
+        $provider = new HorizonSqsFifoQueueServiceProvider($this->app);
 
         $provider->register();
     }

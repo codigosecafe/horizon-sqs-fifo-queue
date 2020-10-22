@@ -1,6 +1,6 @@
 <?php
 
-namespace ShiftOneLabs\LaravelSqsFifoQueue\Contracts\Queue;
+namespace CodigoseCafe\HorizonSqsFifoQueue\Contracts\Queue;
 
 interface Deduplicator
 {

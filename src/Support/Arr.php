@@ -1,6 +1,6 @@
 <?php
 
-namespace ShiftOneLabs\LaravelSqsFifoQueue\Support;
+namespace CodigoseCafe\HorizonSqsFifoQueue\Support;
 
 use Illuminate\Support\Arr as BaseArr;
 

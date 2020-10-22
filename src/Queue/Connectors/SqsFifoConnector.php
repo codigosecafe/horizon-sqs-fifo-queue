@@ -1,13 +1,13 @@
 <?php
 
-namespace ShiftOneLabs\LaravelSqsFifoQueue\Queue\Connectors;
+namespace CodigoseCafe\HorizonSqsFifoQueue\Queue\Connectors;
 
 use Aws\Sqs\SqsClient;
 use Illuminate\Support\Str;
 use InvalidArgumentException;
 use Illuminate\Queue\Connectors\SqsConnector;
-use ShiftOneLabs\LaravelSqsFifoQueue\Support\Arr;
-use ShiftOneLabs\LaravelSqsFifoQueue\SqsFifoQueue;
+use CodigoseCafe\HorizonSqsFifoQueue\Support\Arr;
+use CodigoseCafe\HorizonSqsFifoQueue\SqsFifoQueue;
 
 class SqsFifoConnector extends SqsConnector
 {

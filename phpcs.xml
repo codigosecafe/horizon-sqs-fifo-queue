@@ -13,5 +13,5 @@
         <exclude-pattern>tests/*</exclude-pattern>
     </rule>
 
-    <rule ref="vendor/shiftonelabs/codesniffer-standard/ShiftOneLabs" />
+    <rule ref="vendor/shiftonelabs/codesniffer-standard/CodigoseCafe" />
 </ruleset>

@@ -1,8 +1,8 @@
 <?php
 
-namespace ShiftOneLabs\LaravelSqsFifoQueue\Tests;
+namespace CodigoseCafe\HorizonSqsFifoQueue\Tests;
 
-use ShiftOneLabs\LaravelSqsFifoQueue\Support\Str;
+use CodigoseCafe\HorizonSqsFifoQueue\Support\Str;
 
 class StrTest extends TestCase
 {

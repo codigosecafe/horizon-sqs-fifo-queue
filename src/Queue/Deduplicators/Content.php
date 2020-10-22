@@ -1,8 +1,8 @@
 <?php
 
-namespace ShiftOneLabs\LaravelSqsFifoQueue\Queue\Deduplicators;
+namespace CodigoseCafe\HorizonSqsFifoQueue\Queue\Deduplicators;
 
-use ShiftOneLabs\LaravelSqsFifoQueue\Contracts\Queue\Deduplicator;
+use CodigoseCafe\HorizonSqsFifoQueue\Contracts\Queue\Deduplicator;
 
 class Content implements Deduplicator
 {

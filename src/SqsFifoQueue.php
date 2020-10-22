@@ -1,6 +1,6 @@
 <?php
 
-namespace ShiftOneLabs\LaravelSqsFifoQueue;
+namespace CodigoseCafe\HorizonSqsFifoQueue;
 
 use LogicException;
 use Aws\Sqs\SqsClient;
@@ -10,10 +10,10 @@ use InvalidArgumentException;
 use Illuminate\Queue\SqsQueue;
 use Illuminate\Mail\SendQueuedMailable;
 use Illuminate\Queue\CallQueuedHandler;
-use ShiftOneLabs\LaravelSqsFifoQueue\Support\Arr;
-use ShiftOneLabs\LaravelSqsFifoQueue\Support\Str;
+use CodigoseCafe\HorizonSqsFifoQueue\Support\Arr;
+use CodigoseCafe\HorizonSqsFifoQueue\Support\Str;
 use Illuminate\Notifications\SendQueuedNotifications;
-use ShiftOneLabs\LaravelSqsFifoQueue\Contracts\Queue\Deduplicator;
+use CodigoseCafe\HorizonSqsFifoQueue\Contracts\Queue\Deduplicator;
 
 class SqsFifoQueue extends SqsQueue
 {
@@ -73,7 +73,7 @@ class SqsFifoQueue extends SqsQueue
      *
      * @param  \Aws\Sqs\SqsClient  $sqs
      *
-     * @return \ShiftOneLabs\LaravelSqsFifoQueue\SqsFifoQueue
+     * @return \CodigoseCafe\HorizonSqsFifoQueue\SqsFifoQueue
      */
     public function setSqs(SqsClient $sqs)
     {

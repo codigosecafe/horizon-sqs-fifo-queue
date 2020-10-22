@@ -1,12 +1,12 @@
 <?php
 
-namespace ShiftOneLabs\LaravelSqsFifoQueue\Tests;
+namespace CodigoseCafe\HorizonSqsFifoQueue\Tests;
 
 use Illuminate\Container\Container;
 use Illuminate\Queue\QueueServiceProvider;
-use ShiftOneLabs\LaravelSqsFifoQueue\Contracts\Queue\Deduplicator;
-use ShiftOneLabs\LaravelSqsFifoQueue\Queue\Connectors\SqsFifoConnector;
-use ShiftOneLabs\LaravelSqsFifoQueue\LaravelSqsFifoQueueServiceProvider;
+use CodigoseCafe\HorizonSqsFifoQueue\Contracts\Queue\Deduplicator;
+use CodigoseCafe\HorizonSqsFifoQueue\Queue\Connectors\SqsFifoConnector;
+use CodigoseCafe\HorizonSqsFifoQueue\HorizonSqsFifoQueueServiceProvider;
 
 class ServiceProviderTest extends TestCase
 {
@@ -79,7 +79,7 @@ class ServiceProviderTest extends TestCase
         $container = new Container();
 
         // Only register the queue manager to avoid events dependency.
-        (new LaravelSqsFifoQueueServiceProvider($container))->register();
+        (new HorizonSqsFifoQueueServiceProvider($container))->register();
         $this->callRestrictedMethod(new QueueServiceProvider($container), 'registerManager');
 
         $connector = $this->callRestrictedMethod($container['queue'], 'getConnector', ['sqs-fifo']);
@@ -93,7 +93,7 @@ class ServiceProviderTest extends TestCase
 
         // Only register the queue manager to avoid events dependency.
         $this->callRestrictedMethod(new QueueServiceProvider($container), 'registerManager');
-        (new LaravelSqsFifoQueueServiceProvider($container))->register();
+        (new HorizonSqsFifoQueueServiceProvider($container))->register();
 
         return $container;
     }

@@ -1,14 +1,14 @@
 <?php
 
-namespace ShiftOneLabs\LaravelSqsFifoQueue;
+namespace CodigoseCafe\HorizonSqsFifoQueue;
 
 use Illuminate\Support\ServiceProvider;
-use ShiftOneLabs\LaravelSqsFifoQueue\Queue\Deduplicators\Sqs;
-use ShiftOneLabs\LaravelSqsFifoQueue\Queue\Deduplicators\Unique;
-use ShiftOneLabs\LaravelSqsFifoQueue\Queue\Deduplicators\Content;
-use ShiftOneLabs\LaravelSqsFifoQueue\Queue\Connectors\SqsFifoConnector;
+use CodigoseCafe\HorizonSqsFifoQueue\Queue\Deduplicators\Sqs;
+use CodigoseCafe\HorizonSqsFifoQueue\Queue\Deduplicators\Unique;
+use CodigoseCafe\HorizonSqsFifoQueue\Queue\Deduplicators\Content;
+use CodigoseCafe\HorizonSqsFifoQueue\Queue\Connectors\SqsFifoConnector;
 
-class LaravelSqsFifoQueueServiceProvider extends ServiceProvider
+class HorizonSqsFifoQueueServiceProvider extends ServiceProvider
 {
     /**
      * Indicates if loading of the provider is deferred.

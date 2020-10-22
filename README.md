@@ -1,12 +1,5 @@
 # horizon-sqs-fifo-queue
 
-[![Latest Version on Packagist][ico-version]][link-packagist]
-[![Software License][ico-license]](LICENSE.txt)
-[![Build Status][ico-travis]][link-travis]
-[![Coverage Status][ico-scrutinizer]][link-scrutinizer]
-[![Quality Score][ico-code-quality]][link-code-quality]
-[![Total Downloads][ico-downloads]][link-downloads]
-
 Esse projeto tem com origem um fork do projeto: https://github.com/shiftonelabs/laravel-sqs-fifo-queue
 
 Este pacote Laravel / Lumen fornece um driver de fila para as filas SQS FIFO da Amazon. Embora o Laravel funcione com as filas padrão SQS da Amazon fora da caixa, as filas FIFO são um pouco diferentes e não são tratadas corretamente pelo Laravel. É aí que entra este pacote.

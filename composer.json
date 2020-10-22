@@ -1,0 +1,53 @@
+{
+    "name": "codigosecafe/horizon-sqs-fifo-queue",
+    "description": "Adiciona um driver de fila Laravel para filas Amazon SQS FIFO.",
+    "keywords": ["laravel", "lumen", "illuminate", "queue", "sqs", "fifo", "aws"],
+    "homepage": "https://github.com/codigosecafe/horizon-sqs-fifo-queue",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Claudio Alexssandro Lino",
+            "email": "codigosecafe+git@gmail.com"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/codigosecafe/horizon-sqs-fifo-queue/issues",
+        "source": "https://github.com/codigosecafe/horizon-sqs-fifo-queue"
+    },
+    "require": {
+        "php": ">=5.5.0",
+        "aws/aws-sdk-php": "~3.0",
+        "illuminate/queue": ">=4.1",
+        "illuminate/support": ">=4.1",
+        "ramsey/uuid": ">=3.0"
+    },
+    "require-dev": {
+        "illuminate/encryption": ">=4.1",
+        "phpunit/phpunit": "~4.0",
+        "mockery/mockery": "~0.9",
+        "squizlabs/php_codesniffer": "2.*",
+        "shiftonelabs/codesniffer-standard": "0.*",
+        "vlucas/phpdotenv": "~2.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "CodigoseCafe\\HorizonSqsFifoQueue\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "CodigoseCafe\\HorizonSqsFifoQueue\\Tests\\": "tests/"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "stable",
+    "extra": {
+        "laravel": {
+            "providers": [
+                "CodigoseCafe\\HorizonSqsFifoQueue\\HorizonSqsFifoQueueServiceProvider"
+            ]
+        }
+    }
+}

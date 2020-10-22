@@ -18,7 +18,7 @@ This package has been tested on Laravel 4.1 through Laravel 8.x, though it may c
 Via Composer
 
 ``` bash
-$ composer require shiftonelabs/laravel-sqs-fifo-queue
+$ composer require codigosecafe/laravel-sqs-fifo-queue
 ```
 
 Once composer has been updated and the package has been installed, the service provider will need to be loaded.

@@ -1,6 +1,6 @@
 {
-    "name": "shiftonelabs/laravel-sqs-fifo-queue",
-    "description": "Adds a Laravel queue driver for Amazon SQS FIFO queues.",
+    "name": "codigosecafe/laravel-sqs-fifo-queue",
+    "description": "Adiciona um driver de fila Laravel para filas Amazon SQS FIFO.",
     "keywords": ["laravel", "lumen", "illuminate", "queue", "sqs", "fifo", "aws"],
     "homepage": "https://github.com/shiftonelabs/laravel-sqs-fifo-queue",
     "license": "MIT",

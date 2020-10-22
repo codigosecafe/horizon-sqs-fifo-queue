@@ -164,6 +164,12 @@ class SqsFifoQueue extends SqsQueue
             : $queue).'.fifo';
     }
 
+
+    public function readyNow($queue = null)
+    {
+        return $this->getConnection()->llen($this->getQueue($queue));
+    }
+
     /**
      * Get the deduplication id for the given driver.
      *

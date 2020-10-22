@@ -170,15 +170,6 @@ class SqsFifoQueue extends SqsQueue
         return $this->size($queue);
     }
 
-    /**
-     * Get the connection for the queue.
-     *
-     * @return \Illuminate\Redis\Connections\Connection
-     */
-    public function getConnection()
-    {
-        return $this->sqs->connection($this->connection);
-    }
 
     /**
      * Get the deduplication id for the given driver.

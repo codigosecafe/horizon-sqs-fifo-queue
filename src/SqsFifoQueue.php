@@ -167,7 +167,17 @@ class SqsFifoQueue extends SqsQueue
 
     public function readyNow($queue = null)
     {
-        return $this->getConnection()->llen($this->getQueue($queue));
+        return $this->size($queue);
+    }
+
+    /**
+     * Get the connection for the queue.
+     *
+     * @return \Illuminate\Redis\Connections\Connection
+     */
+    public function getConnection()
+    {
+        return $this->sqs->connection($this->connection);
     }
 
     /**
